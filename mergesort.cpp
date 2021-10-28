@@ -72,47 +72,47 @@ class Solution
         }
 };
 
-    void Merge(int *arr, int left, int mid, int right)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void Merge(int *arr, int left, int mid, int right)
+{
+    int i = left, j = mid + 1, k = left;
+    int* ans = new int[right - left];
+
+    while (i <= mid and j <= right)
     {
-        int i = left, j = mid + 1, k = left;
-        int* ans = new int[right - left];
-
-        while (i <= mid and j <= right)
-        {
-            if (arr[i] > arr[j])
-            {
-                ans[k] = arr[j];
-                j++;
-            }
-
-            else
-            {
-                ans[k] = arr[i];
-                i++;
-            }
-
-            k++;
-        }
-
-        while (i <= mid)
-        {
-            ans[k] = arr[i];
-            i++;
-            k++;
-        }
-
-        while (j <= right)
+        if (arr[i] > arr[j])
         {
             ans[k] = arr[j];
             j++;
-            k++;
         }
 
-        for (int idx = left; idx <= right; idx++)
-           arr[idx] = ans[idx];
-}
+        else
+        {
+            ans[k] = arr[i];
+            i++;
+        }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        k++;
+    }
+
+    while (i <= mid)
+    {
+        ans[k] = arr[i];
+        i++;
+        k++;
+    }
+
+    while (j <= right)
+    {
+        ans[k] = arr[j];
+        j++;
+        k++;
+    }
+
+    for (int idx = left; idx <= right; idx++)
+        arr[idx] = ans[idx];
+}
 
 void mergeSort(int *arr, int size, int left, int right)
 {
