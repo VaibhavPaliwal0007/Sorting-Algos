@@ -1,11 +1,11 @@
-### This will contain all the sorting algorithms in .cpp 
+## This will contain all the sorting algorithms in .cpp 
 
-- ## As of now, there are five algos 
+- ***As of now, there are five algos***
 
-- BubbleSort
-- CyclicSort
-- InsertionSort
-- MergeSort
-- SelectionSort
+1. BubbleSort
+2. CyclicSort
+3. InsertionSort
+4. MergeSort
+5. SelectionSort
 
 
