@@ -11,6 +11,8 @@
 #include <algorithm>
 using namespace std;
 
+// GFG solution of merge sort
+
 class Solution
 {
     private:
@@ -109,6 +111,8 @@ class Solution
         for (int idx = left; idx <= right; idx++)
            arr[idx] = ans[idx];
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void mergeSort(int *arr, int size, int left, int right)
 {
