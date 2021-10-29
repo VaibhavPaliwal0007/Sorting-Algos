@@ -7,5 +7,6 @@
 3. InsertionSort
 4. MergeSort
 5. SelectionSort
+6. QuickSort
 
 
