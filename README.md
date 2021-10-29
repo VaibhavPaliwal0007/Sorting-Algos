@@ -1,6 +1,6 @@
 ## This will contain all the sorting algorithms in .cpp 
 
-- ***As of now, there are five algos***
+- ***As of now, there are six algos***
 
 1. BubbleSort
 2. CyclicSort
